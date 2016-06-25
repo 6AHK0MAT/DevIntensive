@@ -1,17 +1,238 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context=".ui.activities.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"/>
-</RelativeLayout>
+    //Coding
+
+
+    <LinearLayout
+    style="@style/HeaderContainer">
+
+    <LinearLayout
+        android:layout_weight="0.25"
+        style="@style/HeaderBlock">
+
+                <TextView
+                    android:text="5"
+                    style="@style/HeaderText_Number"/>
+
+                <TextView
+                    android:text="Рейтинг"
+                    style="@style/HeaderText_Text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/DivingLine">
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/HeaderBlock"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:text="5"
+                    style="@style/HeaderText_Number"/>
+
+                <TextView
+                    android:text="Написано строк кода"
+                    style="@style/HeaderText_Text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/DivingLine">
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/HeaderBlock"
+                android:layout_weight="0.25">
+
+                <TextView
+                    android:text="5"
+                    style="@style/HeaderText_Number"/>
+
+                <TextView
+                    android:text="Проектов"
+                    style="@style/HeaderText_Text"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        // Cell Phone
+        <LinearLayout
+            style="@style/MatchParent_WrapContent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/size_small_24">
+            <ImageView
+                style="@style/LeftIcon"
+                android:src="@drawable/ic_call_black_24dp"
+                />
+            <LinearLayout
+
+                style="@style/ContentArea">
+                <android.support.design.widget.TextInputLayout
+                    style="@style/MatchParent_WrapContent">
+
+                    <EditText
+                        style="@style/MatchParent_WrapContent"
+                        android:hint="Мобильный"
+                        android:text="+7(923) 403-80-40"
+                        android:inputType="phone"/>
+
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <ImageView
+                style="@style/RightIcon"
+                android:src="@drawable/ic_phone_in_talk_black_24dp"/>
+
+
+
+
+        </LinearLayout>
+
+
+        //Post
+
+
+        <LinearLayout
+            style="@style/MatchParent_WrapContent"
+            android:orientation="horizontal">
+            <ImageView
+                style="@style/LeftIcon"
+                android:src="@drawable/ic_email_black_24dp"
+                />
+            <LinearLayout
+                style="@style/ContentArea">
+                <android.support.design.widget.TextInputLayout
+                    style="@style/MatchParent_WrapContent">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="E-mail"
+                        android:text="makhmutov.va@gmail.com"
+                        android:inputType="textEmailAddress"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                style="@style/RightIcon"
+                android:src="@drawable/ic_send_black_24dp"/>
+
+
+        </LinearLayout>
+
+
+        //VK
+
+        <LinearLayout
+            style="@style/MatchParent_WrapContent"
+            android:orientation="horizontal">
+            <ImageView
+                style="@style/LeftIcon"
+                android:src="@drawable/new_ic_vk"/>
+
+            <LinearLayout
+                style="@style/ContentArea">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Профиль в VK"
+                        android:text="vk.com/id108108539"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                style="@style/RightIcon"
+                android:src="@drawable/ic_person_black_24dp"/>
+
+
+        </LinearLayout>
+
+        //Репозиторий
+
+
+        <LinearLayout
+            style="@style/MatchParent_WrapContent"
+            android:orientation="horizontal">
+            <ImageView
+                style="@style/LeftIcon"
+                android:src="@drawable/ic_wifi_tethering_black_24dp"
+                />
+            <LinearLayout
+                style="@style/ContentArea">
+                <android.support.design.widget.TextInputLayout
+                    style="@style/MatchParent_WrapContent">
+                    <EditText
+                        style="@style/MatchParent_WrapContent"
+                        android:hint="Репозиторий"
+                        android:text="github.com/6AHK0MAT/DevIntensive"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                style="@style/RightIcon"
+                android:src="@drawable/ic_person_black_24dp"/>
+
+
+        </LinearLayout>
+
+
+        // О себе
+
+
+        <LinearLayout
+            style="@style/MatchParent_WrapContent"
+            android:orientation="horizontal">
+            <ImageView
+                style="@style/LeftIcon"
+                android:src="@drawable/ic_cached_black_24dp"
+
+                />
+            <LinearLayout
+                style="@style/ContentArea"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+                    style="@style/MatchParent_WrapContent">
+                    <EditText
+                        style="@style/MatchParent_WrapContent"
+                        android:hint="О себе"
+                        android:text="Без вредных привычек, т.е.
+не пренадлежу к той половине
+человечества,которые первую
+половину своей жизни тратят на
+приобретение дурных привычек,
+которые, в свое время,сокращают
+их вторую половину!
+                    "/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
