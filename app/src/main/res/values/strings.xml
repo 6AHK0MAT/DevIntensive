@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">DevIntensive</string>
+    <string name="app_name">Махмутов Владимир</string>
+    <string name="activity_main.title.rating_textview">Рейтинг</string>
+    <string name="activity_main.title.code_strings_textview">Написано строк кода</string>
+    <string name="activity_main.title.projects_textview">Проектов</string>
+
+
+    <string name="activity_main.title.mobile_textview">Мобильный</string>
+    <string name="activity_main.title.email_textview">E-mail</string>
+    <string name="activity_main.title.vk_textview">Профиль в VK</string>
+    <string name="activity_main.title.github_textbiew">Репозиторий</string>
+    <string name="activity_main.title.about_textbiew">О себе</string>
+
+
+    <string name="drawer_menu.title.user_profile">Мой профиль</string>
+    <string name="drawer_menu.title.team">Команда</string>
 </resources>
