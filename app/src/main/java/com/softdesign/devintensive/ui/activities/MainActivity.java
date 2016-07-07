@@ -1,6 +1,5 @@
 package com.softdesign.devintensive.ui.activities;
 
-
 import android.Manifest;
 import android.app.Dialog;
 import android.content.ActivityNotFoundException;
@@ -44,9 +43,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-
 import com.squareup.picasso.Picasso;
-
 
 import java.io.File;
 import java.io.IOException;
@@ -55,7 +52,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-
 import butterknife.BindView;
 import butterknife.BindViews;
 import butterknife.ButterKnife;
@@ -63,7 +59,6 @@ import com.softdesign.devintensive.R;
 import com.softdesign.devintensive.data.managers.DataManager;
 import com.softdesign.devintensive.utils.ConstantManager;
 import com.softdesign.devintensive.utils.RoundImage;
-
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     public static final String TAG = ConstantManager.TAG_PREFIX + "Main Activity";
