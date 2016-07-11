@@ -42,4 +42,7 @@
     <dimen name="drawer_image_60">60dp</dimen>
     <dimen name="profile_image_size">256dp</dimen>
     <dimen name="fab_right_space">8dp</dimen>
+    <dimen name="image_size_90">90dp</dimen>
+    <dimen name="margin_56">56dp</dimen>
+    <dimen name="auth_layout_width">256dp</dimen>
 </resources>

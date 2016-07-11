@@ -18,6 +18,7 @@ public class BaseActivity extends AppCompatActivity {
     private ProgressDialog mProgressDialog;
 
 
+
     public void showProgress(){
         if (mProgressDialog == null){
             mProgressDialog = new ProgressDialog(this, R.style.custom_dialog);
@@ -40,13 +41,12 @@ public class BaseActivity extends AppCompatActivity {
         }
     }
 
-
     public void showError(String message, Exception exception){
         showToast(message);
         Log.d(TAG, exception.getMessage());
     }
 
-
+    //Сообщенеи в овале (контекст, сообщение, длительность показа сообщения)
     public void showToast(String message){
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }

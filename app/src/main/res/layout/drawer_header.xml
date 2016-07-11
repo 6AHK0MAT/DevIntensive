@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/spacing_larger_172"
     android:id="@+id/drawer_releative_layout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/draw_layout_style">
@@ -7,22 +9,26 @@
 
     <ImageView
         android:id="@+id/user_avatar"
+        android:layout_width="@dimen/drawer_image_60"
+        android:layout_height="@dimen/drawer_image_60"
         style="@style/avatar_style"/>
 
 
     <LinearLayout
+        style="@style/layout_drawer"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/size_medium_56"
-        android:orientation="vertical"
-        android:layout_alignParentBottom="true"
-        android:gravity="center_vertical">
+        android:layout_height="@dimen/size_medium_56">
 
         <TextView
             android:id="@+id/user_name"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
             style="@style/user_name_style"/>
 
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/user_email"
             style="@style/user_email_style"/>
     </LinearLayout>
