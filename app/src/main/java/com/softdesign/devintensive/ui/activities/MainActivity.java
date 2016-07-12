@@ -378,7 +378,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     private void setupDrawer() throws IOException {
         NavigationView navigationView = (NavigationView) findViewById(R.id.navigation_view);
-        setupDrawerHeader(navigationView, Uri.parse("android.resource://com.softdesign.devintensive/drawable/avatar"), "Владимир", "makhmutov.va@mail.ru");
+        setupDrawerHeader(navigationView, Uri.parse("android.resource://softdesign.devintensive/drawable/avatar"), "Александр", "email@email.com");
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {
