@@ -1,6 +1,5 @@
 package com.softdesign.devintensive.ui.activities;
 
-
 import android.Manifest;
 import android.app.Dialog;
 import android.content.ActivityNotFoundException;
@@ -44,9 +43,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-
 import com.squareup.picasso.Picasso;
-
 
 import java.io.File;
 import java.io.IOException;
@@ -55,7 +52,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-
 import butterknife.BindView;
 import butterknife.BindViews;
 import butterknife.ButterKnife;
@@ -63,7 +59,6 @@ import com.softdesign.devintensive.R;
 import com.softdesign.devintensive.data.managers.DataManager;
 import com.softdesign.devintensive.utils.ConstantManager;
 import com.softdesign.devintensive.utils.RoundImage;
-
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     public static final String TAG = ConstantManager.TAG_PREFIX + "Main Activity";
@@ -378,7 +373,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     private void setupDrawer() throws IOException {
         NavigationView navigationView = (NavigationView) findViewById(R.id.navigation_view);
-        setupDrawerHeader(navigationView, Uri.parse("android.resource://com.softdesign.devintensive/drawable/avatar"), "Владимир", "makhmutov.va@mail.ru");
+        setupDrawerHeader(navigationView, Uri.parse("android.resource://softdesign.devintensive/drawable/avatar"), "Александр", "email@email.com");
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {
