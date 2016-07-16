@@ -2,23 +2,16 @@ package com.softdesign.devintensive.utils;
 
 
 import android.app.Application;
-import android.content.Intent;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
-
-
-import com.softdesign.devintensive.ui.activities.AuthActivity;
 
 
 public class DevintensiveApplication extends Application {
 
 
-    private static SharedPreferences sSharedPreferences;
-
-
-    public static SharedPreferences getSharedPreferences() {
-        return sSharedPreferences;
-    }
+    public static SharedPreferences sSharedPreferences;
+    public static Context sContext;
 
 
     @Override
@@ -27,5 +20,16 @@ public class DevintensiveApplication extends Application {
 
 
         sSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        sContext = getContext();
+    }
+
+
+    public static SharedPreferences getSharedPreferences() {
+        return sSharedPreferences;
+    }
+
+
+    public static Context getContext() {
+        return sContext;
     }
 }
