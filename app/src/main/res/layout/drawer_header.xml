@@ -1,35 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="@dimen/spacing_larger_172"
-    android:id="@+id/drawer_releative_layout"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/draw_layout_style">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="172dp"
+                android:paddingTop="@dimen/spacing_medial_24"
+                android:paddingLeft="@dimen/spacing_normal_16"
+                android:paddingRight="@dimen/spacing_normal_16"
+                android:paddingBottom="@dimen/spacing_small_8"
+                android:background="@drawable/nav_header_bg">
 
 
     <ImageView
-        android:id="@+id/user_avatar"
-        android:layout_width="@dimen/drawer_image_60"
-        android:layout_height="@dimen/drawer_image_60"
-        style="@style/avatar_style"/>
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/avatar_size"
+        android:layout_height="@dimen/avatar_size"
+        android:layout_marginTop="@dimen/spacing_normal_16"/>
 
 
     <LinearLayout
-        style="@style/layout_drawer"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/size_medium_56">
-
-        <TextView
-            android:id="@+id/user_name"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            style="@style/user_name_style"/>
+        android:layout_height="@dimen/size_medium_56"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
 
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/user_email"
-            style="@style/user_email_style"/>
+            android:id="@+id/user_name_txt"
+            android:fontFamily="sans-serif-medium"
+            style="@style/drawer_header_text" />
+
+
+        <TextView
+            android:id="@+id/user_email_txt"
+            style="@style/drawer_header_text"
+            android:fontFamily="sans-serif" />
+
+
     </LinearLayout>
+
+
 </RelativeLayout>
